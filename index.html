@@ -68,6 +68,12 @@
       header { padding-top: 6px; }
       .hero { grid-template-columns: 1.2fr .8fr; align-items:end; }
       .lede { font-size: 18px; }
+      /* Make the form card span the full width on desktop */
+      .card { margin-top: 0; grid-column: 1 / -1; }
+      .foot { grid-template-columns: 2fr 1fr; }
+    }
+      .hero { grid-template-columns: 1.2fr .8fr; align-items:end; }
+      .lede { font-size: 18px; }
       .card { margin-top: 0; }
       .foot { grid-template-columns: 2fr 1fr; }
     }
@@ -82,7 +88,7 @@
       <nav aria-label="secondary">
         <a href="https://www.slamjam.com" target="_blank" rel="noopener">Shop</a>
         <a href="https://company.slamjam.com" target="_blank" rel="noopener">Company</a>
-
+        <a href="#apply">Candidatura</a>
       </nav>
     </header>
 
@@ -91,12 +97,16 @@
         <div class="eyebrow">Lavora con noi</div>
         <h1>Careers & Applications</h1>
         <p class="lede">Siamo sempre alla ricerca di persone curiose, precise e appassionate della cultura che ci circonda. Invia la tua candidatura con il form qui sotto. Ti contatteremo se il tuo profilo è in linea con le posizioni aperte o con le opportunità future.</p>
-
+        <div class="kicker" role="list" aria-label="Punti chiave">
+          <p role="listitem">⟂ Ambiente inclusivo</p>
+          <p role="listitem">⟂ Team internazionale</p>
+          <p role="listitem">⟂ HQ: Ferrara, Italia</p>
+        </div>
       </div>
       <div class="card" aria-label="Form di candidatura">
         <div class="card-head">
           <div class="card-title">Invia la tua candidatura</div>
-
+          <div class="card-meta">Microsoft Forms — integrato</div>
         </div>
         <div class="iframe-wrap">
           <iframe title="Slam Jam — Application Form" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=cVjWVj7fg0ChkkwezOyo67uBd2B8YYNBtaCtj2XavntUQTgwM0ZST1Y1UUpKME1VVU9FRk1JNVVBQi4u&amp;embed=true" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen referrerpolicy="no-referrer" loading="lazy"></iframe>
@@ -135,4 +145,3 @@
   </script>
 </body>
 </html>
-

@@ -1,1 +1,138 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slam Jam — Careers & Applications</title>
+  <meta name="description" content="Lavora con Slam Jam. Invia la tua candidatura tramite il form integrato Microsoft." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #000;
+      --fg: #fff;
+      --muted: #a3a3a3;
+      --accent: #fff;
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, Helvetica, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a { color: var(--fg); text-decoration: none; border-bottom: 1px solid transparent; }
+    a:hover { border-color: var(--fg); }
+
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 28px 20px 80px; }
+
+    header { display:flex; align-items:center; justify-content:space-between; gap: 16px; }
+    .brand img {
+      height: 32px;
+      width: auto;
+      display:block;
+      filter: invert(1) brightness(200%);
+    }
+
+    nav { display:flex; gap: 22px; align-items:center; }
+    nav a { font-size: 14px; letter-spacing: .04em; text-transform: uppercase; opacity:.9; }
+    nav a:hover { opacity: 1; }
+
+    .hero { margin-top: 56px; display:grid; grid-template-columns: 1fr; gap: 18px; }
+    .eyebrow { letter-spacing: .12em; text-transform: uppercase; font-size: 12px; color: var(--muted); }
+    h1 { font-size: clamp(36px, 6vw, 72px); line-height: 1.02; margin: 0; text-wrap: balance; text-transform: uppercase; }
+    .lede { max-width: 70ch; color:#e5e5e5; font-size: 16px; }
+
+    .card { margin-top: 28px; background: #0a0a0a; border: 1px solid #1a1a1a; border-radius: 16px; overflow: hidden; }
+    .card-head { display:flex; align-items:center; justify-content:space-between; padding: 18px 18px; border-bottom:1px solid #1a1a1a; }
+    .card-title { font-weight: 600; text-transform: uppercase; letter-spacing:.08em; font-size: 13px; }
+    .card-meta { color: var(--muted); font-size: 12px; }
+    .iframe-wrap { position: relative; width: 100%; min-height: 70vh; background:#0f0f0f; }
+    .iframe-wrap iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+
+    .details { display:grid; grid-template-columns: 1fr; gap:24px; margin-top: 28px; }
+    .kicker { display:flex; gap:24px; flex-wrap:wrap; }
+    .kicker p { margin:0; color:#d4d4d4; }
+
+    footer { margin-top: 80px; border-top: 1px solid #1a1a1a; }
+    .foot { display:grid; grid-template-columns: 1fr; gap:22px; padding-top: 22px; color:var(--muted); font-size: 12px; }
+    .foot a { color: var(--muted); }
+
+    @media (min-width: 900px) {
+      header { padding-top: 6px; }
+      .hero { grid-template-columns: 1.2fr .8fr; align-items:end; }
+      .lede { font-size: 18px; }
+      .card { margin-top: 0; }
+      .foot { grid-template-columns: 2fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="https://slamjam.com/cdn/shop/files/SJ_ICONLOGOTYPE-1.png" alt="Slam Jam" />
+      </div>
+      <nav aria-label="secondary">
+        <a href="https://www.slamjam.com" target="_blank" rel="noopener">Shop</a>
+        <a href="https://company.slamjam.com" target="_blank" rel="noopener">Company</a>
+
+      </nav>
+    </header>
+
+    <section class="hero" id="apply">
+      <div>
+        <div class="eyebrow">Lavora con noi</div>
+        <h1>Careers & Applications</h1>
+        <p class="lede">Siamo sempre alla ricerca di persone curiose, precise e appassionate della cultura che ci circonda. Invia la tua candidatura con il form qui sotto. Ti contatteremo se il tuo profilo è in linea con le posizioni aperte o con le opportunità future.</p>
+
+      </div>
+      <div class="card" aria-label="Form di candidatura">
+        <div class="card-head">
+          <div class="card-title">Invia la tua candidatura</div>
+
+        </div>
+        <div class="iframe-wrap">
+          <iframe title="Slam Jam — Application Form" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=cVjWVj7fg0ChkkwezOyo67uBd2B8YYNBtaCtj2XavntUQTgwM0ZST1Y1UUpKME1VVU9FRk1JNVVBQi4u&amp;embed=true" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen referrerpolicy="no-referrer" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="details" aria-label="Informazioni sulla privacy e contatti">
+      <div>
+        <p style="margin:0 0 8px 0; color:#e5e5e5"><strong>Privacy & trattamento dati</strong></p>
+        <p style="margin:0;color:#c7c7c7">Le informazioni inviate verranno utilizzate esclusivamente per processare la tua candidatura, in conformità con la nostra <a href="https://www.slamjam.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>. Puoi richiederne la cancellazione in qualsiasi momento.</p>
+      </div>
+      <div>
+        <p style="margin:0 0 8px 0; color:#e5e5e5"><strong>Domande?</strong></p>
+        <p style="margin:0;color:#c7c7c7">Per assistenza puoi scrivere a <a href="mailto:careers@slamjam.com">careers@slamjam.com</a> oppure visitare la sezione <a href="https://help.slamjam.com" target="_blank" rel="noopener">Help</a>.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot">
+        <div>
+          <div style="font-weight:600; text-transform:uppercase; letter-spacing:.06em; color:#e5e5e5;">Slam Jam S.r.l. UNIPERSONALE</div>
+          <div>Via F. L. Ferrari 37/a — 44122 Ferrara (IT) • P.IVA 01399030384</div>
+          <div><a href="https://www.slamjam.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> · <a href="https://www.slamjam.com/policies/terms-of-service" target="_blank" rel="noopener">Terms</a> · <a href="https://www.slamjam.com/policies/cookie-policy" target="_blank" rel="noopener">Cookie</a></div>
+        </div>
+        <div style="text-align:right;">
+          <div>© <span id="year"></span> Slam Jam</div>
+          <div><a href="https://www.slamjam.com" target="_blank" rel="noopener">slamjam.com</a></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 

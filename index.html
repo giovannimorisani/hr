@@ -12,82 +12,90 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
   <style>
-    /* Primary font */
-    @font-face {
-      font-family: "SJHelveticaRoman";
-      src: url("https://cdn.shopify.com/s/files/1/0620/5302/3882/files/SJHelveticaRoman.woff2?v=1708704322") format("woff2");
-      font-weight: 400;
-      font-style: normal;
-      font-stretch: normal;
-      font-display: swap;
-      ascent-override: 100%;
-      unicode-range: U+0020-00FC;
-    }
+  /* Primary font */
+  @font-face {
+    font-family: "SJHelveticaRoman";
+    src: url("https://cdn.shopify.com/s/files/1/0620/5302/3882/files/SJHelveticaRoman.woff2?v=1708704322") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+    ascent-override: 100%;
+    unicode-range: U+0020-00FC;
+  }
 
-    /* First fallback */
-    @font-face {
-      font-family: "Helvetica-Regular";
-      src: url("https://cdn.shopify.com/s/files/1/0620/5302/3882/files/Helvetica-Regular.woff2?v=1708704741") format("woff2");
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-    }
+  /* First fallback */
+  @font-face {
+    font-family: "Helvetica-Regular";
+    src: url("https://cdn.shopify.com/s/files/1/0620/5302/3882/files/Helvetica-Regular.woff2?v=1708704741") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
 
-    :root {
-      --bg: #ffffff;
-      --fg: #000000;
-      --muted: #555555;
-      --accent: #000000;
-      --maxw: 1100px;
-    }
-    * { box-sizing: border-box; }
-    html, body { height: 100%; }
-    body {
-      margin: 0;
-      font-family: "SJHelveticaRoman", "Helvetica-Regular", "Roboto", system-ui, -apple-system, "Segoe UI", Arial, Helvetica, "Apple Color Emoji", "Segoe UI Emoji";
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.5;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-    a { color: var(--fg); text-decoration: none; border-bottom: 1px solid transparent; }
-    a:hover { border-color: var(--fg); }
+  :root {
+    --bg: #ffffff;
+    --fg: #000000;
+    --muted: #555555;
+    --accent: #000000;
+    --maxw: 1100px;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    font-family: "SJHelveticaRoman", "Helvetica-Regular", "Roboto", system-ui, -apple-system, "Segoe UI", Arial, Helvetica, "Apple Color Emoji", "Segoe UI Emoji";
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a { color: var(--fg); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-color: var(--fg); }
 
-    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 28px 20px 80px; }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 28px 20px 80px; }
 
-    header { display:flex; align-items:center; justify-content:space-between; gap: 16px; }
-    .brand img { height: 32px; width: auto; display:block; }
+  header { display:flex; align-items:center; justify-content:space-between; gap: 16px; }
+  .brand img { height: 32px; width: auto; display:block; }
 
-    nav { display:flex; gap: 22px; align-items:center; }
-    nav a { font-size: 14px; letter-spacing: .04em; text-transform: uppercase; opacity:.9; }
-    nav a:hover { opacity: 1; }
+  nav { display:flex; gap: 22px; align-items:center; }
+  nav a { font-size: 14px; letter-spacing: .04em; text-transform: uppercase; opacity:.9; }
+  nav a:hover { opacity: 1; }
 
-    .hero { margin-top: 56px; display:grid; grid-template-columns: 1fr; gap: 18px; }
-    .eyebrow { letter-spacing: .12em; text-transform: uppercase; font-size: 12px; color: var(--muted); }
-    h1 { font-size: clamp(36px, 6vw, 72px); line-height: 1.02; margin: 0; text-wrap: balance; text-transform: uppercase; }
-    .lede { max-width: 70ch; color:#333333; font-size: 16px; }
-    .kicker { display:flex; gap:24px; flex-wrap:wrap; }
-    .kicker p { margin:0; color:#555555; }
+  .hero { margin-top: 56px; display:grid; grid-template-columns: 1fr; gap: 18px; }
+  .eyebrow { letter-spacing: .12em; text-transform: uppercase; font-size: 12px; color: var(--muted); }
+  h1 { font-size: clamp(36px, 6vw, 72px); line-height: 1.02; margin: 0; text-wrap: balance; text-transform: uppercase; }
+  .lede { max-width: 70ch; color:#333333; font-size: 16px; }
+  .kicker { display:flex; gap:24px; flex-wrap:wrap; }
+  .kicker p { margin:0; color:#555555; }
 
-    /* Centered Form Section */
-    .form-section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    .form-section .card { background: #f5f5f5; border: 1px solid #e0e0e0; border-radius: 16px; overflow: hidden; }
-    .card-head { display:flex; align-items:center; justify-content:space-between; padding: 18px 20px; border-bottom:1px solid #e0e0e0; }
-    .card-title { font-weight: 500; text-transform: uppercase; letter-spacing:.08em; font-size: 13px; }
-    .tally-embed { width:100%; border:0; display:block; min-height:60vh; background: transparent; }
+  /* Centered Form Section */
+  .form-section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
 
-    .details { display:grid; grid-template-columns: 1fr; gap:24px; margin-top: 28px; }
-    footer { margin-top: 80px; border-top: 1px solid #e0e0e0; }
-    .foot { display:grid; grid-template-columns: 1fr; gap:22px; padding-top: 22px; color:var(--muted); font-size: 12px; }
-    .foot a { color: var(--muted); }
+  /* 👉 qui ho tolto il grigio (#f5f5f5) e messo bianco */
+  .form-section .card {
+    background: #ffffff;          /* prima era #f5f5f5 */
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    overflow: hidden;
+  }
 
-    @media (min-width: 900px) {
-      header { padding-top: 6px; }
-      .lede { font-size: 18px; }
-      .foot { grid-template-columns: 2fr 1fr; }
-    }
-  </style>
+  .card-head { display:flex; align-items:center; justify-content:space-between; padding: 18px 20px; border-bottom:1px solid #e0e0e0; }
+  .card-title { font-weight: 500; text-transform: uppercase; letter-spacing:.08em; font-size: 13px; }
+  .tally-embed { width:100%; border:0; display:block; min-height:60vh; background: transparent; }
+
+  .details { display:grid; grid-template-columns: 1fr; gap:24px; margin-top: 28px; }
+  footer { margin-top: 80px; border-top: 1px solid #e0e0e0; }
+  .foot { display:grid; grid-template-columns: 1fr; gap:22px; padding-top: 22px; color:var(--muted); font-size: 12px; }
+  .foot a { color: var(--muted); }
+
+  @media (min-width: 900px) {
+    header { padding-top: 6px; }
+    .lede { font-size: 18px; }
+    .foot { grid-template-columns: 2fr 1fr; }
+  }
+</style>
 </head>
 <body>
   <div class="wrap">

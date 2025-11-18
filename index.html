@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
   <style>
-  /* Primary font */
+
   @font-face {
     font-family: "SJHelveticaRoman";
     src: url("https://cdn.shopify.com/s/files/1/0620/5302/3882/files/SJHelveticaRoman.woff2?v=1708704322") format("woff2");
@@ -24,7 +24,7 @@
     unicode-range: U+0020-00FC;
   }
 
-  /* First fallback */
+
   @font-face {
     font-family: "Helvetica-Regular";
     src: url("https://cdn.shopify.com/s/files/1/0620/5302/3882/files/Helvetica-Regular.woff2?v=1708704741") format("woff2");
@@ -70,12 +70,11 @@
   .kicker { display:flex; gap:24px; flex-wrap:wrap; }
   .kicker p { margin:0; color:#555555; }
 
-  /* Centered Form Section */
+
   .form-section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
 
-  /* 👉 qui ho tolto il grigio (#f5f5f5) e messo bianco */
   .form-section .card {
-    background: #ffffff;          /* prima era #f5f5f5 */
+    background: #ffffff;      
     border: 1px solid #e0e0e0;
     border-radius: 16px;
     overflow: hidden;
@@ -100,15 +99,16 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="brand">
-        <img src="https://slamjam.com/cdn/shop/files/SJ_ICONLOGOTYPE-1.png" alt="Slam Jam" />
-      </div>
-      <nav aria-label="secondary">
-        <a href="https://www.slamjam.com" target="_blank" rel="noopener">Shop</a>
-        <a href="https://company.slamjam.com" target="_blank" rel="noopener">Company</a>
-      </nav>
-    </header>
-
+  <div class="brand">
+    <a href="https://www.slamjam.com" target="_blank" rel="noopener">
+      <img src="https://slamjam.com/cdn/shop/files/SJ_ICONLOGOTYPE-1.png" alt="Slam Jam" />
+    </a>
+  </div>
+  <nav aria-label="secondary">
+    <a href="https://www.slamjam.com" target="_blank" rel="noopener">Shop</a>
+    <a href="https://company.slamjam.com" target="_blank" rel="noopener">Company</a>
+  </nav>
+</header>
     <section class="hero" id="apply">
       <div>
         <div class="eyebrow">Work with us</div>

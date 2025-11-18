@@ -5,22 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Slam Jam — Careers & Applications</title>
   <meta name="description" content="Work with Slam Jam. Submit your application via the integrated Tally form." />
+
+  <!-- Roboto fallback from Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <style>
+    /* Primary font */
+    @font-face {
+      font-family: "SJHelveticaRoman";
+      src: url("https://cdn.shopify.com/s/files/1/0620/5302/3882/files/SJHelveticaRoman.woff2?v=1708704322") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: normal;
+      font-display: swap;
+      ascent-override: 100%;
+      unicode-range: U+0020-00FC;
+    }
+
+    /* First fallback */
+    @font-face {
+      font-family: "Helvetica-Regular";
+      src: url("https://cdn.shopify.com/s/files/1/0620/5302/3882/files/Helvetica-Regular.woff2?v=1708704741") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
     :root {
-      --bg: #000;
-      --fg: #fff;
-      --muted: #a3a3a3;
-      --accent: #fff;
+      --bg: #ffffff;
+      --fg: #000000;
+      --muted: #555555;
+      --accent: #000000;
       --maxw: 1100px;
     }
     * { box-sizing: border-box; }
     html, body { height: 100%; }
     body {
       margin: 0;
-      font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, Helvetica, "Apple Color Emoji", "Segoe UI Emoji";
+      font-family: "SJHelveticaRoman", "Helvetica-Regular", "Roboto", system-ui, -apple-system, "Segoe UI", Arial, Helvetica, "Apple Color Emoji", "Segoe UI Emoji";
       background: var(--bg);
       color: var(--fg);
       line-height: 1.5;
@@ -33,7 +57,7 @@
     .wrap { max-width: var(--maxw); margin: 0 auto; padding: 28px 20px 80px; }
 
     header { display:flex; align-items:center; justify-content:space-between; gap: 16px; }
-    .brand img { height: 32px; width: auto; display:block; filter: invert(1) brightness(200%); }
+    .brand img { height: 32px; width: auto; display:block; }
 
     nav { display:flex; gap: 22px; align-items:center; }
     nav a { font-size: 14px; letter-spacing: .04em; text-transform: uppercase; opacity:.9; }
@@ -42,19 +66,19 @@
     .hero { margin-top: 56px; display:grid; grid-template-columns: 1fr; gap: 18px; }
     .eyebrow { letter-spacing: .12em; text-transform: uppercase; font-size: 12px; color: var(--muted); }
     h1 { font-size: clamp(36px, 6vw, 72px); line-height: 1.02; margin: 0; text-wrap: balance; text-transform: uppercase; }
-    .lede { max-width: 70ch; color:#e5e5e5; font-size: 16px; }
+    .lede { max-width: 70ch; color:#333333; font-size: 16px; }
     .kicker { display:flex; gap:24px; flex-wrap:wrap; }
-    .kicker p { margin:0; color:#d4d4d4; }
+    .kicker p { margin:0; color:#555555; }
 
     /* Centered Form Section */
     .form-section { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    .form-section .card { background: #0a0a0a; border: 1px solid #1a1a1a; border-radius: 16px; overflow: hidden; }
-    .card-head { display:flex; align-items:center; justify-content:space-between; padding: 18px 20px; border-bottom:1px solid #1a1a1a; }
+    .form-section .card { background: #f5f5f5; border: 1px solid #e0e0e0; border-radius: 16px; overflow: hidden; }
+    .card-head { display:flex; align-items:center; justify-content:space-between; padding: 18px 20px; border-bottom:1px solid #e0e0e0; }
     .card-title { font-weight: 500; text-transform: uppercase; letter-spacing:.08em; font-size: 13px; }
-    .tally-embed { width:100%; border:0; display:block; min-height:60vh; }
+    .tally-embed { width:100%; border:0; display:block; min-height:60vh; background: transparent; }
 
     .details { display:grid; grid-template-columns: 1fr; gap:24px; margin-top: 28px; }
-    footer { margin-top: 80px; border-top: 1px solid #1a1a1a; }
+    footer { margin-top: 80px; border-top: 1px solid #e0e0e0; }
     .foot { display:grid; grid-template-columns: 1fr; gap:22px; padding-top: 22px; color:var(--muted); font-size: 12px; }
     .foot a { color: var(--muted); }
 
@@ -114,17 +138,17 @@
   <div class="wrap">
     <section class="details" aria-label="Privacy information & contacts">
       <div>
-        <p style="margin:0 0 8px 0; color:#e5e5e5"><strong>Privacy & data processing</strong></p>
-        <p style="margin:0;color:#c7c7c7">
+        <p style="margin:0 0 8px 0; color:#111111"><strong>Privacy & data processing</strong></p>
+        <p style="margin:0;color:#555555">
           The information you submit will be used solely to process your application, in accordance with our 
           <a href="https://www.slamjam.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>. 
           You can request its deletion at any time.
         </p>
       </div>
       <div>
-        <p style="margin:0 0 8px 0; color:#e5e5e5"><strong>Questions?</strong></p>
-        <p style="margin:0;color:#c7c7c7">
-          For assistance you can email <a href="mailto:job@slamjam.com">job@slamjam.com</a> or visit the 
+        <p style="margin:0 0 8px 0; color:#111111"><strong>Questions?</strong></p>
+        <p style="margin:0;color:#555555">
+          For assistance you can email <a href="mailto:job@slamjam.com">careers@slamjam.com</a> or visit the 
           <a href="https://help.slamjam.com" target="_blank" rel="noopener">Help</a> section.
         </p>
       </div>
@@ -133,7 +157,7 @@
     <footer>
       <div class="foot">
         <div>
-          <div style="font-weight:600; text-transform:uppercase; letter-spacing:.06em; color:#e5e5e5;">Slam Jam S.r.l. UNIPERSONALE</div>
+          <div style="font-weight:600; text-transform:uppercase; letter-spacing:.06em; color:#111111;">Slam Jam S.r.l. UNIPERSONALE</div>
           <div>Via F. L. Ferrari 37/a — 44122 Ferrara (IT) • VAT no. 01399030384</div>
           <div>
             <a href="https://www.slamjam.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> · 
